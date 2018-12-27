@@ -22,7 +22,7 @@ react-router
 The react front end is agnostic to the API backend, however I have set up another repo with a SLIM PHP instance that works seamlessly. The user initiates a google authorization through the front end. The front end sends a request to the SLIM backend. The SLIM backend behind the scenes communicates with google to verify the request, and then produces its own token to pass back down to the client. 
 
 
-#make it work for you
+# make it work for you
 
 Should be easy, although I have never tried it. For this front end react part, I would think..clone it, npm install it,  set up  https://console.developers.google.com  OAuth 2.0 web client for your conditions, add your client id in src\services\google.js.  
 
