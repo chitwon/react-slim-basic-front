@@ -1,3 +1,5 @@
+demo:  http://mathcart.com/react-slim-basic-front/student-hw   
+
 # MathCart React Slim Skeleton - A good starting point for react front end with google login to protect routes from a slim php backend API
 
   - Started with Create React App
@@ -19,3 +21,10 @@ react-router
 
 The react front end is agnostic to the API backend, however I have set up another repo with a SLIM PHP instance that works seamlessly. The user initiates a google authorization through the front end. The front end sends a request to the SLIM backend. The SLIM backend behind the scenes communicates with google to verify the request, and then produces its own token to pass back down to the client. 
 
+
+#make it work for you
+
+Should be easy, although I have never tried it. For this front end react part, I would think..clone it, npm install it,  set up  https://console.developers.google.com  OAuth 2.0 web client for your conditions, add your client id in src\services\google.js.  
+
+After that, you need to set up the backend. I used a SLIM application  that I have linked, you can view that repo for more information. Whatever backend API you set up, you need to include the appropriate URLs in the .env files here, both production and development. 
+ 
