@@ -1,0 +1,1 @@
+export const GOOGLE_CLIENT_ID = "google client id from your google dev console"
